@@ -1,13 +1,36 @@
-  <button id="spin-button">SPIN</button>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Spin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Bible Spin</h1>
+        <p>Spin the wheel and discover a random Bible verse!</p>
+    </header>
+
+    <main>
+        <section id="wheel-section">
+            <h2>Spin the Wheel</h2>
+
+            <div id="wheel-container">
+                <div id="pointer"></div>
+                <canvas id="wheel" width="500" height="500"></canvas>
+            </div>
+
+            <button id="spin-button">SPIN</button>
         </section>
 
         <section id="result-section">
             <h2>Your Bible Verse</h2>
-
             <h3 id="book-name">Waiting for your spin...</h3>
-
             <p id="verse-reference"></p>
-
             <p id="verse-text">Your random verse will appear here.</p>
         </section>
     </main>
